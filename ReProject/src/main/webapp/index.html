@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="global.css" type="text/css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Front Controller Example</title>
+<link href="global.css" type="text/css" rel="stylesheet">
+
+<!-- <link rel="stylesheet" type="text/css" href="/ReProject/resources/css/mystyles.css"/>-->
+</head>
+<body>
+
+	<div class="container-fluid bg">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+				<h4>Front Controller Design Pattern Example</h4>
+				<form class="form_container" id="form_id" method="post" action="/ReProject/forwarding/login">
+					<p>Please log in!</p>
+			
+					<input id="uname" type="text" placeholder="enter username" name="username" />
+					<br>
+					<div class="form-group">
+						<input class="form-control" id="pword" type="text"  placeholder="enter password" name="password" />
+						<br>
+					</div>
+					<select id="form_action" onChange="select_change()" >
+						<option value="">--- Select Role ---</option>
+						<option value="manager">Manager</option>
+						<option value="employee">Employee</option>
+					</select>
+					<br><br>
+					<input type="submit" value="Login" onclick="handleSubmit()"/>
+				</form>
+		
+				<!-- JSON SERVLET EXAMPLE -->
+				<form method="GET" action="/ReProject/json/applej">
+					<p>JSON Servlet Button</p>
+					<input type="submit" value="Find Apple"/>
+				</form>
+		
+				<form method="GET" action="/ReProject/json/pepperj">
+					<p>JSON Servlet Button</p>
+					<input type="submit" value="Find Pepper"/>
+				</form>
+		
+	        	<script type="text/javascript" src="/ReProject/resources/js/index.js"></script>
+	       	</div>
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        </div>
+    </div>
+</body>
+</html>

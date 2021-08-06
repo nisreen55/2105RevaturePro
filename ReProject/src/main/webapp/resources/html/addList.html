@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/GrocPro/resources/css/empStyle.css"/>
+  </head>
+  <body>
+    <div class="testbox">
+    <form >
+      <div class="banner">
+        <h1>New Ticket Form</h1>
+      </div>
+      <p>Please fill out with the information. Thank you!</p>
+      <hr/>
+      <fieldset>
+        <legend>New Ticket Information</legend>
+        <div class="item">
+          <label for="name">List Id<span>*</span></label>
+          <input id="rId" type="text" name="text" width=calc(50%-70px) required/>
+        </div>
+        <div class="item">
+          <label for="amount">List Date<span>*</span></label>
+          <input id="rAmount" type="text" name="text" placeholder="Ticket Amount" required/>
+        </div>
+        <div class="item">
+          <label for="description">Store Name<span>*</span></label>
+          <input id="rDesc" type="text" name="text" placeholder="Description" required/>
+        </div>
+        <div  class="item">
+				<select id="rType" aria-label="Reimbursement Type">
+  					<option selected > --- select menu ---</option>
+  					<option value="1">Lodging</option>
+  					<option value="2">Travel</option>
+  					<option value="3">Food</option>
+				</select>
+		</div>
+		<div class="btn-block">
+      	<!-- <button type="submit" href="/" onclick="addTicket()">SAVE</button>-->
+      	<input id="add-tick"type="submit" value="Add Ticket" onclick="addTicket()"/>
+      
+      </div>
+      </fieldset>
+      </form>
+      <div class="btn-block">
+        	<form method="GET" action="/GrocPro/resources/html/empForm.html">
+				<input type="submit" value="Back"/>
+			</form>
+		</div>
+      <script type="text/javascript" src="/ReProject/resources/js/addList.js" ></script>
+  </body>
+</html>

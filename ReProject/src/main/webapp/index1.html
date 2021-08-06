@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="#">
+        <title>
+            Login Form
+        </title>
+        <link rel="stylesheet" href="/ReProject/resources/css/style.css" />
+        <script type="text/javascript" src="/ReProject/resources/js/index.js"></script>
+    </head>
+   	<body> 
+        <form  method="POST" action="/ReProject/resources/result.html">
+            <input type="text" id="name" name="name" placeholder="Enter name" />
+       		<input type="password" id="pword" name="pword" placeholder="Enter password" />
+       		<input type="submit" onclick="handleSubmit()"/>          		
+       		<label>Set Form Action :</label>
+		</form>
+		<select id="form_action" onChange="select_change()" >
+				<option value="">--- Set Form Action ---</option>
+				<option value="/ReProject/forwarding/login">Manager</option>
+				<option value="/ReProject/resources/html/home.html">Employee</option>
+		</select>
+    </body>
+</html>

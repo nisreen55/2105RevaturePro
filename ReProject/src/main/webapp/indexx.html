@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+    	<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	
+    	<title>Transparent Login Form</title>
+    	<link rel="stylesheet" href="/ReProject/resources/css/global.css">
+  	</head>
+ 
+  	<body>
+    	<div class="bg-img">
+      		<div class="content">
+        		<header>Login Form</header>
+        			<form  id="form_idx" method="post" action="/ReProject/forwarding/login">
+        			
+          				<div class="field">
+            				<span class="fa fa-user"></span>
+            				
+            				<input id="logName" type="text"  placeholder="User name" name="username">
+          				</div>
+          				<div class="field space">
+            				<span class="fa fa-lock"></span>
+            				<input id="logPass" type="password" class="pass-key" required placeholder="Password" name="password">
+            				<span class="show">SHOW</span>
+          				</div>
+          				<br>
+          				<select id="logform_action" name ="logform_action" class="field" onChange="select_changex()" >
+          					<option value="">--- Select Role ---</option>
+							<option value="Employee" >Employee</option>
+							<!-- <option value="manager">Manager</option>-->
+							<option value="Manager" >Manager</option>
+						</select>
+						<br><br>
+          				<div class="field">
+          	  				<input type="submit" value="LOGIN" onclick="handleSubmitx()">
+          				</div>
+        			</form>
+    		</div>   
+    	</div>
+    <script>
+      const pass_field = document.querySelector('.pass-key');
+      const showBtn = document.querySelector('.show');
+      showBtn.addEventListener('click', function()
+    		{
+       			if(pass_field.type === "password")
+       			{
+         			pass_field.type = "text";
+         			showBtn.textContent = "HIDE";
+         			showBtn.style.color = "#3498db";
+       			}else
+       			{
+         			pass_field.type = "password";
+         			showBtn.textContent = "SHOW";
+         			showBtn.style.color = "#222";
+       			}
+      		});
+    </script>
+   	<script type="text/javascript" src="/ReProject/resources/js/indexx.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   	
+    
+  </body>
+</html>

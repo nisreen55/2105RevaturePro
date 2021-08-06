@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <title>AJAX Example</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h3>AJAX EXAMPLE</h3>
+                <h5>
+                    <span class="label label-success"> Using the RESTful API</span>
+                </h5>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="well">
+            <form method = "GET"  id="sample"class="well">
+                <input type="text" id="userId" placeholder="Enter Poke Id" class="form-control" /> 
+                <input type="text" id="userId1" placeholder="Enter Poke Id" class="form-control" /> 
+                
+                <input type="submit" value="login" id="log" class="form-control btn btn-primary" />
+                <button type = "submit" id = "log1"></button>
+            </form>
+            </div>
+            <form  action="http://localhost:9001/ReProject/resources/html/home.html" class="well">
+                <input type="submit" value="Get Pokemon Info (With a form)" id="pokeSubmit2" class="form-control btn btn-primary" />
+            </form>
+            <div class="well">
+                <div class="text-center">
+                    <h3 id="pokeName"></h3>
+                    <h4 id="pokedexNumber"></h4>
+                    <img id="pokeImage"></img>
+                </div>
+            </div>
+            
+            
+            <!-- quick demo of form's default behavior -->
+            <div class="well">
+    
+                <form method="GET" action="http://www.google.com/">
+                    <input type="submit" value="Page Transfer Button" class="form-control btn-primary"/>
+                </form>
+            </div>
+        </div>
+        
+        
+        
+        
+}
+      
+        
+        <script type="text/JavaScript" charset="UTF-8" src="/ReProject/resources/js/event3.js" ></script>
+        
+        
+    
+        <!-- Promises demo js file -->
+        <!-- <script type="text/javascript" src="./javascript-promises.js"></script> -->
+    
+
+        <!-- bootstrap stuff -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script>
+    </body>
+</html>
